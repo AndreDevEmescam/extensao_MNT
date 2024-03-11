@@ -69,7 +69,7 @@ if (isset($_POST) && (!empty($_POST))) {
 
                         $_SESSION['cpf'] = $cpf;
                     
-                        header('Location: ../extensao/inicio.php?page=scr/candidato/upload.php');
+                        header('Location: ../extensao_MNT/inicio.php?page=scr/candidato/upload.php');
 
 
                     } else {
@@ -78,7 +78,7 @@ if (isset($_POST) && (!empty($_POST))) {
                     
                         if($inscritos < $vaga){
 
-                            header('Location: ../extensao/inicio.php?page=scr/candidato/inscadastro.php');
+                            header('Location: ../extensao_MNT/inicio.php?page=scr/candidato/inscadastro.php');
 
                         } else {
 
@@ -245,7 +245,7 @@ function validaCPF($cpf)
 
             <br><br>
             <div class="col-md-18 sm" style="text-align: center" ;>
-                <a href="../extensao/inicio.php?page=home.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Cancelar&nbsp;</a>
+                <a href="../extensao_MNT/inicio.php?page=home.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Cancelar&nbsp;</a>
                 <button type="submit" style="cursor:pointer; background-color: #2E8B57; color: #ffffff;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;&nbsp;&nbsp;&nbsp;Enviar&nbsp;&nbsp;&nbsp;&nbsp;</button>
                 <span class="field-validation-valid text-danger" data-valmsg-for="ErrorLogin" data-valmsg-replace="true"></span>
             </div>

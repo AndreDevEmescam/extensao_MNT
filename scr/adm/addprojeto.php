@@ -130,7 +130,7 @@ $enviarArquivo = $_SESSION['enviarArquivo'];
                             </div>
 
                             <div class="cancelar">
-                              <a href="../extensao/inicio.php?page=scr/adm/admprojetos.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff; width: 70%;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Cancelar&nbsp;</a> 
+                              <a href="../extensao_MNT/inicio.php?page=scr/adm/admprojetos.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff; width: 70%;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Cancelar&nbsp;</a> 
                             </div>
 
 
@@ -197,7 +197,7 @@ $enviarArquivo = $_SESSION['enviarArquivo'];
             
             function readConsulta(nome, datainicio, datalimite, vaga, enviarArquivo) {               
 
-                var redirectURL = "../extensao/inicio.php?page=scr/adm/admadd.php&nome=" + encodeURIComponent(nome) +
+                var redirectURL = "../extensao_MNT/inicio.php?page=scr/adm/admadd.php&nome=" + encodeURIComponent(nome) +
                                 "&datainicio=" + encodeURIComponent(datainicio) +
                                 "&datalimite=" + encodeURIComponent(datalimite) +
                                 "&vaga=" + encodeURIComponent(vaga) +
@@ -207,7 +207,7 @@ $enviarArquivo = $_SESSION['enviarArquivo'];
 
 
         function readConsulta2(){            
-            $(location).attr('href', '../extensao/inicio.php?page=scr/adm/admprojetos.php');	
+            $(location).attr('href', '../extensao_MNT/inicio.php?page=scr/adm/admprojetos.php');	
         }
 
     </script>

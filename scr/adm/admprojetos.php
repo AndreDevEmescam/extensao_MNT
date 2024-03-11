@@ -14,7 +14,7 @@ if (!isset($_SESSION)) {
 
 if (!isset($_SESSION['login'])) {
 
-    header('Location: ../extensao/inicio.php?page=home.php');
+    header('Location: ../extensao_MNT/inicio.php?page=home.php');
 }
 
 
@@ -59,8 +59,8 @@ if (!isset($_SESSION['login'])) {
                     <div class="col-lg-6">
                     </div>
                     <div class="col-lg-6" style="width: 93%;">
-                        <a href="../extensao/inicio.php?page=scr/adm/addprojeto.php"  style="float:right" class="btn btn-primary m-1 float-right" ><i class="fa fa-plus"></i> Adicionar Projeto</a>
-                        <a href="../extensao/inicio.php?page=scr/adm/export/projetos.php" style="float:right" class="btn btn-success m-1 float-right"> <i class="fa fa-download"></i>Exportar para Excel</a>
+                        <a href="../extensao_MNT/inicio.php?page=scr/adm/addprojeto.php"  style="float:right" class="btn btn-primary m-1 float-right" ><i class="fa fa-plus"></i> Adicionar Projeto</a>
+                        <a href="../extensao_MNT/inicio.php?page=scr/adm/export/projetos.php" style="float:right" class="btn btn-success m-1 float-right"> <i class="fa fa-download"></i>Exportar para Excel</a>
                     </div>
                 </div>
                 <br>
@@ -121,7 +121,7 @@ if (!isset($_SESSION['login'])) {
 
         <br><br>
         <div class="modal-footer" text-align: right;>
-            <a href="../extensao/inicio.php?page=scr/adm/admmenu.php" type="button" class="btn btn-primary" data-dismiss="modal">
+            <a href="../extensao_MNT/inicio.php?page=scr/adm/admmenu.php" type="button" class="btn btn-primary" data-dismiss="modal">
                 Fechar</a>
         </div>
 
@@ -204,7 +204,7 @@ if (!isset($_SESSION['login'])) {
 	    }
    
         function readConsulta(){
-             $(location).attr('href', '../extensao/inicio.php?page=scr/adm/admprojetos.php');	
+             $(location).attr('href', '../extensao_MNT/inicio.php?page=scr/adm/admprojetos.php');	
         }
 
     </script>

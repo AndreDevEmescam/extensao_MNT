@@ -222,7 +222,7 @@ if($enviarArquivo=='N'){
         
     } else {
 
-        header('Location: ../extensao/inicio.php?page=home.php');
+        header('Location: ../extensao_MNT/inicio.php?page=home.php');
     } 
 
 ?>

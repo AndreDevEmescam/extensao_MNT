@@ -35,7 +35,7 @@ if ($result->nomeAluno) {
 
 } else {
 
-    header('Location: ../extensao/inicio.php?page=home.php');
+    header('Location: ../extensao_MNT/inicio.php?page=home.php');
     
 }
 
@@ -241,7 +241,7 @@ if ($result->nomeAluno) {
 
 
     <div class="cancelar">
-        <a href="../extensao/inicio.php?page=home.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff; width: 150%; margin-left: 25%;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Concluído&nbsp;</a>
+        <a href="../extensao_MNT/inicio.php?page=home.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff; width: 150%; margin-left: 25%;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Concluído&nbsp;</a>
     </div>
 
 

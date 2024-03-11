@@ -56,7 +56,7 @@
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
 
-    header('Location: ../extensao/inicio.php?page=scr/adm/admprojetos.php');
+    header('Location: ../extensao_MNT/inicio.php?page=scr/adm/admprojetos.php');
    
    
 

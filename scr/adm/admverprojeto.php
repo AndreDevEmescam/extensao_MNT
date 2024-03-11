@@ -11,7 +11,7 @@
     <div class="modal-dialog">
             <div class="modal-content">
                 <br><br>
-                <form name="formIscri" class="form-signin" method="POST" autocomplete="off" action="../extensao/inicio.php?page=scr/adm/admedit.php"> 
+                <form name="formIscri" class="form-signin" method="POST" autocomplete="off" action="../extensao_MNT/inicio.php?page=scr/adm/admedit.php"> 
 
                     <div class="form-row">  
                        <div class="form-group col-md-12">
@@ -60,7 +60,7 @@
 <div id="consulta_<?php echo $row['idcurso']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form name="formIscri" class="form-signin" method="POST" autocomplete="off" action="../extensao/inicio.php?page=scr/adm/export/inscritos.php">      
+            <form name="formIscri" class="form-signin" method="POST" autocomplete="off" action="../extensao_MNT/inicio.php?page=scr/adm/export/inscritos.php">      
                   <div class="modal-header">
                         <h4 class="modal-title">Projeto Cadastrado</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

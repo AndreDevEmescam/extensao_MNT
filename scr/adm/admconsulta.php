@@ -14,7 +14,7 @@ if (!isset($_SESSION)) {
 
 if (!isset($_SESSION['login'])) {
 
-    header('Location: ../extensao/inicio.php?page=home.php');
+    header('Location: ../extensao_MNT/inicio.php?page=home.php');
 }
 
 

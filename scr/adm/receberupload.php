@@ -84,7 +84,7 @@ function atualiza($arquivo, $cpf, $tipo,$idcurso,$idcandidato){
     $stmt->bindParam(':mcpf ', $cpf);
 	$result = $stmt->execute();
 
-    header('Location: ../../../extensao/inicio.php?page=scr/candidato/upload.php');
+    header('Location: ../../../extensao_MNT/inicio.php?page=scr/candidato/upload.php');
 
 }
 

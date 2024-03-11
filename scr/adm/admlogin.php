@@ -58,7 +58,7 @@ if (isset($_POST["ldapLogin"])) {
                 if ($ldapbind) {
                     ldap_close($ldapConnection);    // close ldap connection
                     $_SESSION['login'] = $_POST["login"];
-                    header('Location: ../extensao/inicio.php?page=scr/adm/admmenu.php');
+                    header('Location: ../extensao_MNT/inicio.php?page=scr/adm/admmenu.php');
                 } else
                     $errorMessage = "Credenciais inválidas!";
             }
@@ -95,7 +95,7 @@ if (isset($_POST["ldapLogin"])) {
             </div>
             <br><br>
             <div class="col-md-18 sm" style="text-align: center" ;>
-                <a href="../extensao/inicio.php?page=home.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Cancelar&nbsp;</a>
+                <a href="../extensao_MNT/inicio.php?page=home.php" style="cursor:pointer; background-color: #2E8B57; color: #ffffff;" class="btn btn-lg btn-primary btn-block" id="motivo">&nbsp;Cancelar&nbsp;</a>
                 <button type="submit" style="cursor:pointer; background-color: #2E8B57; color: #ffffff;" class="btn btn-lg btn-primary btn-block" id="ldapLogin" name="ldapLogin">&nbsp;&nbsp;&nbsp;&nbsp;Enviar&nbsp;&nbsp;&nbsp;&nbsp;</button>
                 <span class="field-validation-valid text-danger" data-valmsg-for="ErrorLogin" data-valmsg-replace="true"></span>
             </div>
