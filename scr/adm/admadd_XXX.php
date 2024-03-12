@@ -5,7 +5,7 @@ date_default_timezone_set('America/Sao_Paulo');
 
 $response = array();
 
-$curso = isset($_GET['nome']) ? $_GET['nome'] : null;
+$projeto = isset($_GET['nome']) ? $_GET['nome'] : null;
 $datainicio = isset($_GET['datainicio']) ? $_GET['datainicio'] : null;
 $datafim = isset($_GET['datalimite']) ? $_GET['datalimite'] : null;
 $dataprova = isset($_GET['datalimite']) ? $_GET['datalimite'] : null;
@@ -49,7 +49,7 @@ try {
     $sql .= "VALUES (ISNULL((SELECT MAX(idCurso) + 1 FROM curso), 1), ?, ?, ?, ?, ?, ?)";
 
     $stmt = $pdo->prepare($sql);
-    $stmt->execute(array($curso, $datafim, $datainicio, $dataprova, $vaga, $enviarArquivo));
+    $stmt->execute(array($projeto, $datafim, $datainicio, $dataprova, $vaga, $enviarArquivo));
 
     $pdo->commit();
 

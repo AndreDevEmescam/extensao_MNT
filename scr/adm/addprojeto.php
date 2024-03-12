@@ -6,7 +6,7 @@ if (!isset($_SESSION)) {
 require_once('conexao/pdo.php');
 
 $cpf = $_SESSION['cpf'];
-$curso = $_SESSION['curso'];
+$projeto = $_SESSION['projeto'];
 $enviarArquivo = $_SESSION['enviarArquivo'];
 
 ?>
@@ -70,7 +70,7 @@ $enviarArquivo = $_SESSION['enviarArquivo'];
         <label id="cpf" name="cpf" style="text-align: center;"><h2>Ficha do Projeto</h2></label>
       
         <div class="form">
-            <label id="cpf" name="cpf" style="text-align: center;"><h2><?php echo $curso ?></h2></label>
+            <label id="cpf" name="cpf" style="text-align: center;"><h2><?php echo $projeto ?></h2></label>
             
             <br>
             <form method= "POST" action="scr/adm/admadd.php">

@@ -6,7 +6,7 @@ if (!isset($_SESSION)) {
 require_once('conexao/pdo.php');
 
 $cpf = $_SESSION['cpf'];
-$curso = $_SESSION['curso'];
+$projeto = $_SESSION['projeto'];
 $enviarArquivo = $_SESSION['enviarArquivo'];
 
 ?>
@@ -58,7 +58,7 @@ $enviarArquivo = $_SESSION['enviarArquivo'];
         <label id="cpf" name="cpf" style="text-align: center;"><h2>Ficha de Inscrição</h2></label>
       
         
-            <label id="cpf" name="cpf" style="text-align: center;"><h2><?php echo $curso ?></h2></label>
+            <label id="cpf" name="cpf" style="text-align: center;"><h2><?php echo $projeto ?></h2></label>
             
             <br>
             <form name="formIscri" class="form-signin" method="post" autocomplete="off" action="scr/candidato/addinscricao.php">

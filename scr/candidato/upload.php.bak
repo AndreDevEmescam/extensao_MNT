@@ -22,7 +22,7 @@ $result = $stmt->fetch(PDO::FETCH_OBJ);
 
 if ($result->nomeAluno) {
 
-    $curso = $result->Curso;
+    $projeto = $result->Projeto;
     $email = $result->Email;
     $nomeAluno = $result->nomeAluno;
     $nomeCurso = $result->nomeCurso;
@@ -190,7 +190,7 @@ if ($result->nomeAluno) {
                         </div>
 
                         <div class="form-group col-md-7">
-                            <label for="curso">Curso:&nbsp;&nbsp;<span style='color: #0c0c0e;'><?php echo $curso ?></span>
+                            <label for="curso">Curso:&nbsp;&nbsp;<span style='color: #0c0c0e;'><?php echo $projeto ?></span>
                         </div>
 
                         <div class="form-group col-md-11">

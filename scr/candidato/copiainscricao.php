@@ -21,6 +21,7 @@ $stmt = $pdo->query($sql);
 $result = $stmt->fetch(PDO::FETCH_OBJ);
 
 if ($result->Nome) {
+    $Curso = $result->Curso;
     $Nome = $result->Nome;
     $Sexo = $result->Sexo;
     $Documento = $result->Documento;

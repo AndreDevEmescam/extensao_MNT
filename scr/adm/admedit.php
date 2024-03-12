@@ -7,7 +7,7 @@
  
    
 
-    $curso = $_POST['nome'];
+    $projeto = $_POST['nome'];
     $datainicio = $_POST['datainicio'];
     $datafim = $_POST['datalimite'];
     $dataprova = $_POST['datalimite'];
@@ -43,7 +43,7 @@
     // Altera projeto
     $sql = " UPDATE curso ";
     $sql = $sql." SET ";
-    $sql = $sql." nome ='".$curso."',";
+    $sql = $sql." nome ='".$projeto."',";
     $sql = $sql." DataLimite='".$datafim."',";
     $sql = $sql." DataInicio='".$datainicio."',";
     $sql = $sql." DataProva='".$dataprova."',";

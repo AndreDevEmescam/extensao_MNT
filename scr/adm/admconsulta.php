@@ -135,7 +135,7 @@ if (!isset($_SESSION['login'])) {
 
         <br><br>
         <div class="modal-footer" text-align: right;>
-            <a href="../extensao/inicio.php?page=scr/adm/admmenu.php" type="button" class="btn btn-primary" data-dismiss="modal">
+            <a href="../extensao_MNT/inicio.php?page=scr/adm/admmenu.php" type="button" class="btn btn-primary" data-dismiss="modal">
                 Fechar</a>
         </div>
 

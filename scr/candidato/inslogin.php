@@ -18,7 +18,7 @@ if (isset($_POST) && (!empty($_POST))) {
    
     $cpf = $_POST['cpf'];
     $idcurso = $_POST['idCurso'];
-    $curso = $_POST['curso'];
+    $projeto = $_POST['projeto'];
 
   if(!empty($idcurso)){
 
@@ -37,7 +37,7 @@ if (isset($_POST) && (!empty($_POST))) {
     if ($result->nome) {
    
         $_SESSION['idCurso'] = $result->idcurso;
-        $_SESSION['curso'] =$result->nome;
+        $_SESSION['projeto'] =$result->nome;
         $_SESSION['enviarArquivo'] =$result->enviarArquivo;
 
         $vaga =  $result->vaga;
@@ -231,9 +231,9 @@ function validaCPF($cpf)
 
                                 while ($dados = $stmt->fetch(PDO::FETCH_ASSOC)) {
                                     $idCurso = $dados['idCurso'];
-                                    $curso = $dados['Nome'];
+                                    $projeto = $dados['Nome'];
 
-                                    echo '<option value=' . $idCurso . '>' . $curso . '</option>';
+                                    echo '<option value=' . $idCurso . '>' . $projeto . '</option>';
                                 }
                             }
 

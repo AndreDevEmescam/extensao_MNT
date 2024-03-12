@@ -14,7 +14,7 @@
     $enviarArquivo = $_POST['enviarArquivo'];  
     */
 
-    $curso = isset($_GET['nome']) ? $_GET['nome'] : null;
+    $projeto = isset($_GET['nome']) ? $_GET['nome'] : null;
     $datainicio = isset($_GET['datainicio']) ? $_GET['datainicio'] : null;
     $datafim = isset($_GET['datalimite']) ? $_GET['datalimite'] : null ;
     $dataprova = isset($_GET['datalimite']) ? $_GET['datalimite'] : null ;
@@ -47,7 +47,7 @@
     // inclui projeto   
     $sql = " INSERT INTO curso(idCurso,Nome, DataLimite, DataInicio, DataProva, Vaga, enviarArquivo) ";
     $sql = $sql." VALUES (ISNULL((SELECT MAX(idCurso) + 1 FROM curso), 1),";
-    $sql = $sql."'".$curso."',";
+    $sql = $sql."'".$projeto."',";
     $sql = $sql."'".$datafim."',";
     $sql = $sql."'".$datainicio."',";
     $sql = $sql."'".$dataprova."',";

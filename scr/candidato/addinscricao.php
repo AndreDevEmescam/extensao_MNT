@@ -12,12 +12,13 @@ if (isset($_POST) && (!empty($_POST))) {
 
     $cpf = $_SESSION['cpf'];
     $idcurso = $_SESSION['idCurso'];
-    $curso = $_SESSION['curso'];
+    $projeto = $_SESSION['projeto'];
     $enviarArquivo = $_SESSION['enviarArquivo'];
 
     $nome  = $_POST['nome'];
     $matricula = $_POST['Matricula'];
     $periodo = $_POST['Periodo'];
+    $curso = $_POST['Curso'];
    
     $celular = $_POST['Celular'];
     $email = $_POST['Email'];
@@ -74,11 +75,11 @@ if($enviarArquivo=='N'){
                                 $sql = "INSERT INTO candidato(idAnoSemestre, CodBanco, idUf, idFormaPagamento, Cpf,
                                 Nome, Cidade, Telefone, Celular, Email, idCamisa, Curso, Periodo, Matricula, DataInscricao, idCurso)
                                 VALUES (:midAnoSemestre, :mCodBanco, :midUf, :midFormaPagamento, :mcpf, :mNome, :mCidade, :mTelefone, :mCelular, :mEmail, :midCamisa,
-                                :mCurso, :mPeriodo, :mMatricula, :mdataInscricao, :mIdcurso)";
+                                :mProjeto, :mPeriodo, :mMatricula, :mdataInscricao, :mIdcurso)";
                         
                                 $stmt = $pdo->prepare($sql);
                         
-                           
+                                
                            
                                 $stmt->bindParam(':midAnoSemestre', $idAnoSemestre);
                                 $stmt->bindParam(':mCodBanco', $CodBanco);
@@ -91,7 +92,7 @@ if($enviarArquivo=='N'){
                                 $stmt->bindParam(':mCelular', $celular, PDO::PARAM_STR);
                                 $stmt->bindParam(':mEmail', $email, PDO::PARAM_STR);
                                 $stmt->bindParam(':midCamisa', $idcamisa);
-                                $stmt->bindParam(':mCurso', $curso, PDO::PARAM_STR);
+                                $stmt->bindParam(':mProjeto', $curso, PDO::PARAM_STR);
                                 $stmt->bindParam(':mPeriodo', $periodo, PDO::PARAM_STR);
                                 $stmt->bindParam(':mMatricula', $matricula, PDO::PARAM_STR);
                                 $stmt->bindParam(':mdataInscricao', $dataInscricao);
@@ -167,7 +168,7 @@ if($enviarArquivo=='N'){
                             $sql = "INSERT INTO candidato(idAnoSemestre, CodBanco, idUf, idFormaPagamento, Cpf,
                             Nome, Cidade, Telefone, Celular, Email, idCamisa, Curso, Periodo, Matricula, DataInscricao, idCurso)
                             VALUES (:midAnoSemestre, :mCodBanco, :midUf, :midFormaPagamento, :mcpf, :mNome, :mCidade, :mTelefone, :mCelular, :mEmail, :midCamisa,
-                            :mCurso, :mPeriodo, :mMatricula, :mdataInscricao, :mIdcurso)";
+                            :mProjeto, :mPeriodo, :mMatricula, :mdataInscricao, :mIdcurso)";
                     
                             $stmt = $pdo->prepare($sql);
                     
@@ -184,7 +185,7 @@ if($enviarArquivo=='N'){
                             $stmt->bindParam(':mCelular', $celular, PDO::PARAM_STR);
                             $stmt->bindParam(':mEmail', $email, PDO::PARAM_STR);
                             $stmt->bindParam(':midCamisa', $idcamisa);
-                            $stmt->bindParam(':mCurso', $curso, PDO::PARAM_STR);
+                            $stmt->bindParam(':mProjeto', $curso, PDO::PARAM_STR);
                             $stmt->bindParam(':mPeriodo', $periodo, PDO::PARAM_STR);
                             $stmt->bindParam(':mMatricula', $matricula, PDO::PARAM_STR);
                             $stmt->bindParam(':mdataInscricao', $dataInscricao);
