@@ -43,14 +43,10 @@ if (isset($_POST) && (!empty($_POST))) {
         $vaga =  $result->vaga;
         $inscritos =  $result->inscritos;
 
-
     }
 
+
   }
-
- 
-
-
                 if (validaCPF($cpf)) {
 
                     $cpf = preg_replace("/[^0-9]/", "", $cpf);
@@ -91,13 +87,7 @@ if (isset($_POST) && (!empty($_POST))) {
 
                     echo '<script>alert("CPF invalido");</script>';
                 }
-
-
-   
-
 }
-
-
 
 
 function validaCPF($cpf)
